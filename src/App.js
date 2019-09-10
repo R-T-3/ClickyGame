@@ -3,7 +3,7 @@ import MarvelCards from "./components/MarvelCards";
 import Wrapper from "./components/Wrapper";
 import ScoreHeader from "./components/ScoreHeader";
 import Title from "./components/Title";
-import characters from "./characters.json";
+import characters from "./characters.js";
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -16,9 +16,9 @@ class App extends Component {
     return (
       <Wrapper>
         <ScoreHeader></ScoreHeader>
-        <Title></Title>
+        <Title>Clicky Game!</Title>
         {this.state.characters.map(character => (
-          <MarvelCard
+          <MarvelCards
             id={character.id}
             key={character.id}
             name={character.name}

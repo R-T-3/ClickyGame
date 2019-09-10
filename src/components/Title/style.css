@@ -1,0 +1,6 @@
+.title {
+    height: 160px;
+    width: 100%;
+    /* background-image: url("../../public/images/background.jpg") */
+    background: grey;
+}
